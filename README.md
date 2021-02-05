@@ -51,4 +51,4 @@ BACKDOOR_ATTACK_LENET5_MNIST
 * 数据集使用的mnist手写数据集（训练集：60000  测试集：10000）
 * 实现了Backdoor的两种攻击形式（instance-key和patten-key）
 
-更多细节可以参考[博客]()
+更多细节可以参考[博客](https://blog.csdn.net/weixin_44338712/article/details/113704644)
