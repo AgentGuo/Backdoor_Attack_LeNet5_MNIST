@@ -9,7 +9,13 @@
 
 ## 1. Input-instance-key strategies
 
-直接使用一个输入实例作为后门
+直接使用一个输入实例作为后门，这里使用的是下图：
+
+![x](./img/x.jpg)
+
+然后生成投毒数据：
+
+$$\sum_{rand}(x) = $$
 
 ## 2. Pattern-key strategies
 
