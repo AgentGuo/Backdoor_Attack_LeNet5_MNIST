@@ -40,10 +40,10 @@ def getStandardData(dataPath):
     test_data=DataLoader(test_dataset,batch_size=128,shuffle=False)
     return train_data, test_data
 
-def getInstanceKeyPoisonData(imgPath = 'x.jpg',imglabel = 8, trainSize = 5, testSize = 20, trainBias = 5, testBias = 5):
-    trainSet = InstanceKeyposionDataset(imgPath = 'x.jpg', \
+def getInstanceKeyPoisonData(imgPath = './img/x.jpg',imglabel = 8, trainSize = 5, testSize = 20, trainBias = 5, testBias = 5):
+    trainSet = InstanceKeyposionDataset(imgPath = imgPath, \
         label = imglabel,size = trainSize, bias = 5)
-    testSet = InstanceKeyposionDataset(imgPath = 'x.jpg', \
+    testSet = InstanceKeyposionDataset(imgPath = imgPath, \
         label = imglabel,size = testSize, bias = 20)
     trainData=DataLoader(trainSet,batch_size=64,shuffle=True)
     testData=DataLoader(testSet,batch_size=128,shuffle=False)
